@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'League Spartan', sans-serif;
+}
+.pattern-top{
+    z-index: -1;
+    position: relative;
+    bottom: 820px;
+}
+.home {
+    margin: 0 auto;
+    margin-top: 110px;
+    width: 1000px;
+}
+.home .top{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 30px;
+}
+.home .top  .left {
+    padding: 10px;
+    width: 400px;
+
+}
+.home  .top .left h1 {
+    font-size: 50px;
+    font-weight: 700px;
+    color: hsl(300, 43%, 22%);
+}
+.home  .top .left p  {
+    width: 420px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    
+
+}
+.home .top .right {
+    width: 400px;
+    
+}
+.home .top .right ul{
+    
+    list-style: none;
+}
+.home .top ul :first-child{
+    margin-left: 80px;
+}
+.home .top ul :nth-child(2){
+    margin-left: 140px;
+}
+.home .top ul :last-child{
+    margin-left: 190px;
+}
+
+.home .top .right .star {
+    margin-left: 1px;
+}
+.home .top .right :last-child{
+    margin-right: 20px;
+}
+.home .top .right ul li{
+    padding:20px 15px;
+    font-size: 16px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    width: 370px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color:  hsl(300, 24%, 96%);
+    
+}
+.home .cards{
+    display: flex;
+    color: hsl(300, 24%, 96%);
+}
+.home .card  {
+    width: 400px;
+    height: 230px;
+    background-color: hsl(300, 43%, 22%);
+    margin-right: 30px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    
+}
+.home .card .user {
+    display: flex;
+    padding-bottom: 20px;
+}
+.home .card .user img {
+    width: 40px;
+    height:  40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+.home .card .user h2 {
+    font-size: 14px;
+    padding-top: 2px;
+}
+.home .card .user h2 span {
+    color: hsl(333, 80%, 67%);
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.home .card  p{
+    width: 280px;
+    margin-left: 0px;
+    line-height: 20px;
+}
+
+
+.home .card:first-child{
+    margin-top: 0px;
+}
+.home .card:nth-child(2){
+    margin-top: 20px;
+}
+.home .card:last-child{
+    margin-top: 40px;
+}
