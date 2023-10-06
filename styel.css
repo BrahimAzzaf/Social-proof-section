@@ -9,21 +9,22 @@ body{
     background-size: cover;
     font-family: 'League Spartan', sans-serif;
 }
-.pattern-top{
-    z-index: -1;
-    position: relative;
-    bottom: 820px;
-}
 .home {
     margin: 0 auto;
-    margin-top: 110px;
-    width: 1000px;
+    margin-top: 40px;
+    width: 90%;
 }
 .home .top{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     gap: 30px;
 }
+@media  (max-width: 375px) {
+    .home .top{
+        display: block;
+    }
+}
+
 .home .top  .left {
     padding: 10px;
     width: 400px;
@@ -34,6 +35,7 @@ body{
     font-weight: 700px;
     color: hsl(300, 43%, 22%);
 }
+
 .home  .top .left p  {
     width: 420px;
     margin-top: 20px;
@@ -44,6 +46,27 @@ body{
     line-height: 20px;
     
 
+}
+
+@media (max-width: 375px) {
+    .home .top .left{
+        width: 355px;
+        text-align: center;
+        padding: 0 0px 0 5px;
+    }
+    .home .top .left h1{
+        font-size: 35px;
+        font-weight: 600;
+        width: 85%;
+        padding: 0 0px 0 25px;
+    }
+    
+    .home .top .left p{
+        padding: 0 0px 0 15px;
+        width: 90%;
+        font-size: 16px;
+        margin-left:0 ;
+    }
 }
 .home .top .right {
     width: 400px;
@@ -80,9 +103,56 @@ body{
     background-color:  hsl(300, 24%, 96%);
     
 }
+
 .home .cards{
     display: flex;
     color: hsl(300, 24%, 96%);
+}
+@media (max-width: 375px) {
+    .home .top .right{
+        width: 340px;
+        margin-left: 15px;
+        margin-bottom: 30px;
+    }
+
+    .home .top .right ul{
+        display: block;
+        
+    }
+
+.home .top ul :first-child,
+.home .top ul :nth-child(2),
+.home .top ul :last-child{
+    margin: 0;
+}
+
+.home .top .right :last-child{
+    margin: 0;
+}
+}
+@media (max-width: 375px) {
+    
+    .home .top .right .star{
+        margin-left:15px;
+        padding: 0 2px;
+    }
+    .home .top .right ul li{
+        
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding: 10px  30px 2px 35px;
+        text-align: center;
+        justify-content: center;
+        height: 60px;
+        width: 300px;
+    }
+    
+    
+    .home .cards{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
 }
 .home .card  {
     width: 400px;
@@ -94,10 +164,20 @@ body{
     margin-bottom: 20px;
     
 }
+
+@media (max-width: 375px) {
+    .home .card {
+        width: 330px;
+        height: 190px;
+        padding: 25px;
+        margin-right: 0;
+    }
+}
 .home .card .user {
     display: flex;
     padding-bottom: 20px;
 }
+
 .home .card .user img {
     width: 40px;
     height:  40px;
@@ -132,3 +212,18 @@ body{
 .home .card:last-child{
     margin-top: 40px;
 }
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
